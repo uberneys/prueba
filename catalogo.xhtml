@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <link rel="stylesheet" href="css/bootstrap.min.js"></link>
+        <link rel="stylesheet" href="css/estilosindex.css"></link>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+        <title>Catalogo</title>
+    </h:head>
+    <h:body>
+        <header>
+            <div class="row-sm">
+                <img src="img/logo(1).png" class="float-left" width="auto" height="100px"></img>
+            </div>
+            <nav class="navbar navbar-expand-sm">
+                <!-- Links -->
+                <ul class="navbar-nav ">
+                    <li class=" nav-item ">
+                        <h:link value="Inicio" outcome="index" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Contactenos" outcome="contactenos" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Nosotros" outcome="nosotros" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Catalogo" outcome="catalogo" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Iniciar Sesion" outcome="inicioSesion" class="nav-link"></h:link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container">
+            <h:form>
+                <h3 class="text-uppercase text-center">Catálogo de productos</h3>
+                <p class="Lead text-center">Selecciona la cantidad de productos que deseé por unidad</p>
+                <div class="row">
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Arroz Diana</h3>
+                            </div>
+                            <img src="img/arroz.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$1500</h4>
+                                <p>Rico Arroz Diana</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Aceite</h3>
+                            </div>
+                            <img src="img/aceite.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$13000 L</h4>
+                                <p>Aceite fino de girasol</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Leche</h3>
+                            </div>
+                            <img src="img/leche.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$3800 L</h4>
+                                <p>Leche de vaca</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Panela</h3>
+                            </div>
+                            <img src="img/panela.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$3800</h4>
+                                <p>Panela de campo</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Huevos</h3>
+                            </div>
+                            <img src="img/Huevos.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$350 Unidad</h4>
+                                <p>Huevos para tus desayunos</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Papa criolla</h3>
+                            </div>
+                            <img src="img/PAP.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$2000 LB</h4>
+                                <p>Papa criolla para sopas</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Cilantro</h3>
+                            </div>
+                            <img src="img/Cilantro.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$500</h4>
+                                <p>Cilantro para la sopa</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Pan</h3>
+                            </div>
+                            <img src="img/pan.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$1200</h4>
+                                <p>Pan en bolsa</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Cepillo</h3>
+                            </div>
+                            <img src="img/Cepillo.jpg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$2000</h4>
+                                <p>Cepillo para tus dientes</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-3" style="margin-top: 15px;">
+                        <div class="card">
+                            <!-- Encabezado - Titulo -->
+                            <div class="card-header">
+                                <h3>Papel</h3>
+                            </div>
+                            <img src="img/papel.jpeg" alt="" style="height: 255px;"></img>
+                            <!-- Cuerpo - Contenido -->
+                            <div class="card-body">
+                                <h4>$2000</h4>
+                                <p>Papel higiénico</p>
+                            </div>
+                            <center>
+                                <h:selectOneMenu value="area" class="form-control">
+                                    <f:selectItem itemValue="default" itemLabel="agregar"></f:selectItem>
+                                    <f:selectItem itemValue="1" itemLabel="1"></f:selectItem>
+                                    <f:selectItem itemValue="2" itemLabel="2"></f:selectItem>
+                                    <f:selectItem itemValue="3" itemLabel="3"></f:selectItem>
+                                    <f:selectItem itemValue="4" itemLabel="4"></f:selectItem>
+                                    <f:selectItem itemValue="5" itemLabel="5"></f:selectItem>
+                                    <f:selectItem itemValue="6" itemLabel="6"></f:selectItem>
+                                </h:selectOneMenu>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+                <div class="row">
+                    <div class="col-6">	
+                        <p>*Recuerde que se cancela o paga en el momento de la entrega del pedido</p>
+                        <div class="form-group form-check col-md-6">
+                            <input type="checkbox" class="form-check-input" id="aceptar"></input>
+                            <label class="form-check-label">Aceptar términos</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-warning"><h:link value="Enviar" outcome="pedidos"></h:link></button>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+            </h:form>
+        </section>
+
+    </h:body>
+</html>
+
+
+
+

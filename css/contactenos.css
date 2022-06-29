@@ -1,0 +1,27 @@
+*{
+    margin:  0;
+    box-sizing: border-box;
+}
+main{
+  display: flex;
+}
+h3 {
+    color: black;
+}
+form{
+    color: black;
+    border:1px solid black;
+    width: 60%;
+    margin: auto;
+    box-sizing: inherit;
+    background-color:rgba(211, 211, 211, 0.527)
+
+}
+p{
+    font-size:large;
+}
+textarea {
+    width: 60%;
+    margin: auto;
+}
+

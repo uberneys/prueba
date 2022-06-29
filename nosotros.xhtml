@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <link rel="stylesheet" href="css/bootstrap.min.js"></link>
+        <link rel="stylesheet" href="css/estilosindex.css"></link>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="css/nosotros.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>  
+        <title>Nosotros</title>
+    </h:head>
+    <h:body>
+        <header>
+            <div class="row-sm">
+                <img src="img/logo(1).png" class="float-left" width="auto" height="100px"></img>
+            </div>
+            <nav class="navbar navbar-expand-sm">
+                <!-- Links -->
+                <ul class="navbar-nav ">
+                    <li class=" nav-item ">
+                        <h:link value="Inicio" outcome="index" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Contáctenos" outcome="contactenos" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Nosotros" outcome="nosotros" class="nav-link"></h:link>
+                    </li>
+                    <li class="nav-item">
+                        <h:link value="Iniciar Sesion" outcome="inicioSesion" class="nav-link"></h:link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="accordion" id="accordionOriginal">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0 ">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            QUIENES SOMOS
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOriginal">
+                    <div class="card-body"><p>
+                            Tienda Castillo es un local dispuesto a ayudar a nuestros clientes con sus necesidades primarias como lo es elementos de aseo, comida y otros productos. Además, ofrecemos un servicio de crédito con el cual pueden obtener sus productos y cancelar a final de quincena o mes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            VISIÓN
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOriginal">
+                    <div class="card-body"><p>
+                            Para el año 2023 se desea que el proyecto se
+                            pueda extender no solo en las tiendas de
+                            barrio del sector las gaviotas sino en
+                            sectores aledaños para poder brindarles
+                            un enfoque más tecnológico a estas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            MISIÓN
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOriginal">
+                    <div class="card-body"><p>
+                            La misión de nuestro proyecto es
+                            brindar una toque más tecnológico a las
+                            tiendas del sector,
+                            específicamente en el barrio las gaviotas
+                            donde puedan implementar un método de
+                            créditos confiable y un sistema de
+                            información donde sea posible ordenar el
+                            inventario de forma sencilla y eficiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFourth">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                            MANUAL CORPORATIVO
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordionOriginal">
+                    <div class="card-body">
+                        <embed src="manual.pdf" type="application/pdf" width="100%" height="600px" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+

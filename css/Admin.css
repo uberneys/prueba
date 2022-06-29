@@ -1,0 +1,57 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-size: .875rem;
+    background-repeat:no-repeat;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-color: rgba(6, 5, 88, 0.781);
+}
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    box-shadow: inset -1px 0 0 rgb(0 0 0 / 25%);
+}
+#navegacion1 {
+    background-color: rgb(6, 5, 88);
+}
+#navegacion2 {
+    height: 700px;
+    width: 245px;
+    background-color: #67a1cf;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: right;
+}
+.navbar> .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+li a:hover:not(.active) {
+    background-color:rgba(6, 5, 88, 0.781);
+    color: white;
+}
+.sidebar .nav-link {
+    font-weight: 450;
+    color: rgba(6, 5, 88, 0.781);
+}
+#sidebarmenu {
+    justify-content: left;
+    margin: 0;
+}
+.nav-link {
+    font-size:large;
+}
+
+

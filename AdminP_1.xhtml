@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+              integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"></link>
+        <link rel="stylesheet" href="css/Admin.css"></link>
+
+        <title>dashboard</title>
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" id="navegacion1">
+            <h:link class="navbar-brand col-md-2 col-lg-2 mr-0 px-3" outcome="AdminP" value="Tienda castillo"></h:link>
+            <img src="img/logo(1).png" width="auto" height="50px"></img>
+            <button class="navbar-toggler position-absolute d-md-none" type="button" data-toggle="collapse"
+                    data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <input type="text" class="form-control form-control-dark w-100" placeholder="Buscar"></input>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <h:link value="|Cerrar Sesión|" outcome="index" class="nav-link"></h:link>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-8 col-lg-2 d-md-block sidebar collapse show">
+                    <div class="sidebar-sticky pt-3" id="navegacion2">
+                        <img src="img/iconoAdmin.png" alt="" style="width: 60px; margin-left: 10px;"></img>
+                        <h4 style="margin-left: 10px;">Usuario: Admin001</h4>
+                        <h6 style="margin-left: 10px;">Rol: Administrador</h6>
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-left px-3 mt-4 text-muted">
+                            Creditos</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <h:link value="Registrar Creditos" outcome="credito" class="nav-link"></h:link>
+                                <h:link value="Consultar creditos" outcome="TablaCredito" class="nav-link"></h:link>
+                                <span class="sr-only">(actual)</span>
+                            </li>
+                            <li class="nav-item">
+                                <h6 class="sidebar-heading d-flex justify-content-between align-items-left px-3 mt-4 text-muted">
+                                    Compras</h6>
+                                <h:link value="Registrar Compra" outcome="compras" class="nav-link"></h:link>
+                                <h:link value="Consultar Compras" outcome="TablaCompra" class="nav-link"></h:link>
+                            </li>
+                            <li class="nav-item">
+                                <h6 class="sidebar-heading d-flex justify-content-between align-items-left px-3 mt-4 text-muted">
+                                    Ventas</h6>
+                                <h:link value="Registrar venta" outcome="Ventas" class="nav-link"></h:link>
+                                <h:link value="Consultar Ventas" outcome="TablaVenta" class="nav-link"></h:link>
+                            </li>
+                            <li class="nav-item">
+                                <h6 class="sidebar-heading d-flex justify-content-between align-items-left px-3 mt-4 text-muted">
+                                    Proveedores</h6>
+                                <h:link value="Registrar Proveedor" outcome="Proveedor" class="nav-link"></h:link>
+                                <h:link value="Consultar Proveedores" outcome="TablaProveedor" class="nav-link"></h:link>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div>
+                    <main class="" style="margin: 20px;">
+                        <div class="container" style="margin: 50px;">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Bienvenidos a el administrador de CastleStand</h3>
+                                    <p>Recuerda mantenerte los datos actualizados para mayor efectividad :D</p>
+                                    <hr></hr>
+                                    <h3>Actualizaciones recientes de inventario:</h3>
+                                    <h:form>
+                                        <div class="row">
+                                            <h:dataTable id="tabla" class="table" style="width:100%;" value="#{creditoControlador.consultarInventarios()}" var="inventario">
+                                                <h:column>
+                                                    <f:facet name="header">id inventario</f:facet>
+                                                        #{inventario.idInventario}
+                                                </h:column>
+                                                <h:column>
+                                                    <f:facet name="header">fecha</f:facet>
+                                                    <h:outputText value="#{inventario.fecha}">
+                                                    </h:outputText>
+                                                </h:column>
+                                                <h:column>
+                                                    <f:facet name="header">Cantidad Existente</f:facet>
+                                                    <h:outputText value="#{inventario.cantExistente}">
+                                                    </h:outputText>
+                                                </h:column>
+                                            </h:dataTable>
+                                            
+                                            
+                                            
+                                        </div>
+                                    </h:form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center" style="margin-top: 50px;background-color: rgba(211, 211, 211, 0.294);">
+            <p class="display-8" id="piepagina">Direción: Cr15 b este N 49 a 35 sur<br></br>Email: Tiendacastillo@gmail.com<br></br>Teléfonos: 42643237 -3773246 - 37846726 <br></br>Proyect Castle stand</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+
+    </h:body>
+</html>
+
